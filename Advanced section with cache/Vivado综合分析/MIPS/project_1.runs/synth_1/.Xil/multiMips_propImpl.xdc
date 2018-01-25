@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc rfile:../../../mips.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property VCCAUX_IO DONTCARE [get_ports rst]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports rst]
+set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AM28 [get_ports MEM_WB_RegWrite]

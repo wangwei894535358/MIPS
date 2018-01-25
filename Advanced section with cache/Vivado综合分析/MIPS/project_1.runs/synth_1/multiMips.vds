@@ -1,0 +1,627 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 01 23:50:39 2018
+# Process ID: 2496
+# Current directory: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log multiMips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiMips.tcl
+# Log file: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1/multiMips.vds
+# Journal file: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multiMips.tcl -notrace
+Command: synth_design -top multiMips -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5056 
+WARNING: [Synth 8-2611] redeclaration of ansi port MEM_WB_RegWriteReg is not allowed [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:108]
+WARNING: [Synth 8-2611] redeclaration of ansi port MEM_WB_MemtoReg is not allowed [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:111]
+WARNING: [Synth 8-2611] redeclaration of ansi port MEM_WB_RegWrite is not allowed [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:112]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 320.449 ; gain = 110.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'multiMips' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:1]
+INFO: [Synth 8-638] synthesizing module 'InstructionMem' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/instructionMem.v:2]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMem' (1#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/instructionMem.v:2]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/control.v:5]
+INFO: [Synth 8-256] done synthesizing module 'control' (2#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/control.v:5]
+INFO: [Synth 8-638] synthesizing module 'regFile' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/regFile.v:5]
+INFO: [Synth 8-256] done synthesizing module 'regFile' (3#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/regFile.v:5]
+INFO: [Synth 8-638] synthesizing module 'AluCtr' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:1]
+WARNING: [Synth 8-152] case item 8'b1xxx0000 overlaps with previous case item(s) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+WARNING: [Synth 8-152] case item 8'b1xxx0010 overlaps with previous case item(s) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+WARNING: [Synth 8-152] case item 8'b1xxx0100 overlaps with previous case item(s) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+WARNING: [Synth 8-152] case item 8'b1xxx0101 overlaps with previous case item(s) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+WARNING: [Synth 8-152] case item 8'b1xxx1010 overlaps with previous case item(s) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:8]
+INFO: [Synth 8-256] done synthesizing module 'AluCtr' (4#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:1]
+INFO: [Synth 8-638] synthesizing module 'Alu' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/Alu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Alu' (5#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/Alu.v:1]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/signext.v:1]
+INFO: [Synth 8-256] done synthesizing module 'signext' (6#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/signext.v:1]
+INFO: [Synth 8-638] synthesizing module 'Mem' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/memory.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Mem' (7#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/memory.v:1]
+INFO: [Synth 8-256] done synthesizing module 'multiMips' (8#1) [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:1]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[31]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[30]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[29]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[28]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[27]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[26]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[25]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[24]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[23]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[22]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[21]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[20]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[19]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[18]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[17]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[16]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[15]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[14]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[1]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 343.262 ; gain = 133.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 343.262 ; gain = 133.504
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/mips.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/multiMips_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/multiMips_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 798.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Imemory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "regWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'aluCtr_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/AluCtr.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'aluRes_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/Alu.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'Br_ForwardB_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:151]
+WARNING: [Synth 8-327] inferring latch for variable 'Br_ForwardA_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'Br_StallA_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:142]
+WARNING: [Synth 8-327] inferring latch for variable 'Br_StallB_reg' [C:/Users/luzhe/Desktop/pipeline_withoutcache_new/multiMips.v:157]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 24    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 38    
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiMips 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 21    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 6     
+Module InstructionMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 7     
+Module regFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module AluCtr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module Alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[11]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[10]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[1]
+WARNING: [Synth 8-3331] design Mem has unconnected port addr[0]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[31]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[30]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[29]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[28]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[27]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[26]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[25]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[24]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[23]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[22]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[21]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[20]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[19]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[18]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[17]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[16]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[15]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[14]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[13]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[12]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[11]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[10]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[9]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[8]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[1]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port address[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aluctr/aluCtr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[15]' (FD) to 'ID_EX_Immediate_32_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/i_0)
+INFO: [Synth 8-3886] merging instance 'IF_ID_Instruction_reg[13]' (FD) to 'IF_ID_Instruction_reg[14]'
+INFO: [Synth 8-3886] merging instance 'IF_ID_Instruction_reg[31]' (FD) to 'IF_ID_Instruction_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IF_ID_Instruction_reg[30] )
+INFO: [Synth 8-3886] merging instance 'IF_ID_Instruction_reg[28]' (FD) to 'IF_ID_Instruction_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_EX_Immediate_32_reg[10] )
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[13]' (FD) to 'ID_EX_Immediate_32_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_RegisterRd_reg[2]' (FD) to 'ID_EX_RegisterRd_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (aluctr/aluCtr_reg[3]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Funct_reg[5]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Funct_reg[4]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[30]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[10]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[9]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[8]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[7]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_Instruction_reg[6]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[31]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[30]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[29]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[28]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[27]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[26]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[25]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[24]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[23]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[22]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[21]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[20]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[19]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[18]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[17]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[10]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[9]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[8]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[7]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_Immediate_32_reg[6]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[31]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[30]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[29]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[28]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[27]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[26]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[25]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[24]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[23]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[22]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[21]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[20]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[19]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[18]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[17]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[16]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[15]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[14]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[13]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[12]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[11]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[10]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[9]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[8]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_PcAdd4_reg[0]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[31]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[30]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[29]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[28]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[27]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[26]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[25]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[24]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[23]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[22]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[21]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[20]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[19]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[18]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[17]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[16]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[15]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[14]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[13]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[12]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[11]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[10]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[9]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[8]) is unused and will be removed from module multiMips.
+WARNING: [Synth 8-3332] Sequential element (pc_reg[0]) is unused and will be removed from module multiMips.
+INFO: [Synth 8-3886] merging instance 'ID_EX_MemRead_reg' (FD) to 'ID_EX_MemtoReg_reg'
+INFO: [Synth 8-3886] merging instance 'EX_MEM_MemtoReg_reg' (FD) to 'EX_MEM_MemRead_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Mem         | DataMem_reg | 64 x 32(READ_FIRST)    | W |   | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 798.242 ; gain = 588.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[0]' (FDR) to 'ID_EX_Funct_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[1]' (FDR) to 'ID_EX_Funct_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[2]' (FDR) to 'ID_EX_Funct_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[3]' (FDR) to 'ID_EX_Funct_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[11]' (FDR) to 'ID_EX_RegisterRd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[12]' (FDR) to 'ID_EX_RegisterRd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[14]' (FDR) to 'ID_EX_RegisterRd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_Immediate_32_reg[16]' (FDR) to 'ID_EX_RegisterRd_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ALUOp_reg[1]' (FDR) to 'ID_EX_RegDst_reg'
+INFO: [Synth 8-4480] The timing for the instance mem/DataMem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    27|
+|3     |LUT1     |    10|
+|4     |LUT2     |     7|
+|5     |LUT3     |    72|
+|6     |LUT4     |    29|
+|7     |LUT5     |   115|
+|8     |LUT6     |   891|
+|9     |MUXF7    |   256|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |  1300|
+|12    |LD       |    41|
+|13    |IBUF     |     1|
+|14    |OBUF     |     7|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |  2759|
+|2     |  alu     |Alu     |   251|
+|3     |  aluctr  |AluCtr  |    72|
+|4     |  mem     |Mem     |   111|
+|5     |  regfile |regFile |  1921|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 138 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 836.691 ; gain = 146.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 836.691 ; gain = 626.934
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 41 instances were transformed.
+  LD => LDCE: 41 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+126 Infos, 168 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 836.691 ; gain = 610.941
+INFO: [Common 17-1381] The checkpoint 'C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1/multiMips.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 836.691 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 01 23:51:41 2018...

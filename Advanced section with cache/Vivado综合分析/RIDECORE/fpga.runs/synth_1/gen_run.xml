@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1514811267">
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/constants.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/constants.vh"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/dualport_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/dualport_ram.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/ram_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/ram_sync.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/btb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/btb.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/ram_sync_nolatch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/ram_sync_nolatch.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/src_manager.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/src_manager.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/gshare.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/gshare.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/alu_ops.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/alu_ops.vh"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rv32_opcodes.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rv32_opcodes.vh"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/alu.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/multiplier.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/multiplier.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/srcsel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/srcsel.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/search_be.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/search_be.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/decoder.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rs_mul.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rs_mul.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rs_ldst.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rs_ldst.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rs_reqgen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rs_reqgen.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rrf_freelistmanager.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rrf_freelistmanager.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/oldest_finder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/oldest_finder.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/storebuf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/storebuf.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/reorderbuf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/reorderbuf.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/mpft.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/mpft.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/exunit_branch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/exunit_branch.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/tag_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/tag_generator.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/imm_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/imm_gen.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/pipeline_if.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/pipeline_if.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/brimm_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/brimm_gen.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/exunit_mul.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/exunit_mul.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rs_branch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rs_branch.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rs_alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rs_alu.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/srcopr_manager.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/srcopr_manager.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/arf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/arf.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/prioenc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/prioenc.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rrf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/rrf.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/exunit_alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/exunit_alu.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/exunit_ldst.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/exunit_ldst.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/alloc_issue_ino.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/alloc_issue_ino.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/imem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/imem.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/define.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/define.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/uart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/uart.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/pipeline.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/pipeline.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/system.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/system.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/dmem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/dmem.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/top.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/topsim.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/topsim.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/imem_outa.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/imem_outa.v"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/fpga/top.v"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/main.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ridecore/src/fpga/main.xdc"/>
+        <Attr Name="ImportTime" Val="1509346389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/fpga/main.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

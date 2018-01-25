@@ -1,0 +1,362 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Jan 01 21:04:34 2018
+| Host         : DESKTOP-229NUPL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7vx485t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   291 |
+| Unused register locations in slices containing registers |   725 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3660 |         1342 |
+| No           | No                    | Yes                    |              29 |           10 |
+| No           | Yes                   | No                     |            2893 |         2017 |
+| Yes          | No                    | No                     |            3232 |         1319 |
+| Yes          | No                    | Yes                    |             218 |           41 |
+| Yes          | Yes                   | No                     |            4395 |         2467 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------------------------------------+----------------------------------------+------------------+----------------+
+|        Clock Signal       |                  Enable Signal                  |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++---------------------------+-------------------------------------------------+----------------------------------------+------------------+----------------+
+|  genmmcmds/clkgen/CLK_OUT | loader/recv/stage[3]_i_1_n_0                    | genmmcmds/rstgen/cnt_reg[0]_0          |                1 |              4 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | pipe/kirin/prcond_if0                  |                3 |              4 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/E[0]                            | genmmcmds/rstgen/tagreg_reg[1]         |                2 |              5 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/seiryu/comptr_reg[4][0]                    | genmmcmds/rstgen/tagreg_reg[1]         |                2 |              5 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[11]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[11]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[12]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[13]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[14]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[15]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[16]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[17]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[18]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[19]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[20]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[21]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[22]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[23]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[24]                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[25]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[26]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[27]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[28]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[29]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[30]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[31]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[0]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[1]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[2]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[3]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[4]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[5]                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[6]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[9]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[7]                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[8]                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[10]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___23_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[12]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[13]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[14]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[15]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[16]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[17]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[18]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[19]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[20]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[21]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[22]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[23]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[24]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[25]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[26]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[27]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[28]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[29]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[30]                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag5_0[31]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___0_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___10_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___11_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___12_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___13_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___14_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___15_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___16_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___17_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___18_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___19_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___1_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___20_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___21_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___22_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___24_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___25_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___26_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___27_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___28_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___29_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___2_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___30_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___31_n_0                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___3_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___4_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___5_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                4 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___6_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                4 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___7_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___8_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/i___9_n_0                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[0]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[10]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[11]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[12]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[13]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[14]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[15]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[16]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[17]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[18]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[19]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[1]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[20]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[21]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[22]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[23]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[24]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[25]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[26]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[27]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[28]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[29]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[2]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[30]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[31]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[3]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[4]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                4 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[5]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[6]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[7]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[8]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_1[9]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[0]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[10]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[11]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[12]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[13]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[14]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[15]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[16]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[17]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[18]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[19]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[1]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[20]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[21]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[22]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[23]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[24]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[25]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[26]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[27]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[28]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[29]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[2]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[30]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[31]_i_1_n_0             | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[3]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[4]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[5]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[6]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[7]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[8]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_2[9]_i_1_n_0              | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[0]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[1]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[2]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[3]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[4]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[5]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[6]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[9]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[7]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[8]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[10]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[11]                     | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[12]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[13]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[14]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[15]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[16]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[17]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[18]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[19]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[20]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[21]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[22]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[23]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[24]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[25]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[26]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[27]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[28]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[29]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[30]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_3[31]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[0]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[1]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[2]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[3]                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[4]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[5]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[6]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[9]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[7]                      | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[8]                      | genmmcmds/rstgen/tagreg_reg[1]         |                5 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/aregfile/rt/tag0_4[10]                     | genmmcmds/rstgen/tagreg_reg[1]         |                6 |              6 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/finptr[4]_i_1_n_0                       | genmmcmds/rstgen/tagreg_reg[1]         |                3 |              7 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | pipe/reserv_alu2/specbitvec[7]_i_1_n_0 |                4 |              8 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | pipe/reserv_alu1/specbitvec[7]_i_1_n_0 |                5 |              8 |
+|  genmmcmds/clkgen/CLK_OUT | loader/recv/DATA[7]_i_1_n_0                     | genmmcmds/rstgen/cnt_reg[0]_0          |                2 |              8 |
+|  genmmcmds/clkgen/CLK_OUT | genmmcmds/rstgen/cnt_reg[0]_0                   | genmmcmds/clkgen/cnt_reg[0]            |                2 |              8 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/E[0]                                 | genmmcmds/rstgen/tagreg_reg[1]         |                5 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/bhr2_reg[0][0]                       | genmmcmds/rstgen/tagreg_reg[1]         |                4 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/bhr0_reg[0][0]                       | genmmcmds/rstgen/tagreg_reg[1]         |                3 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/bhr1_reg[0][0]                       | genmmcmds/rstgen/tagreg_reg[1]         |                4 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/bhr3_reg[0][0]                       | genmmcmds/rstgen/tagreg_reg[1]         |                4 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/bhr_master_reg[9][0]                 | genmmcmds/rstgen/tagreg_reg[1]         |                2 |             10 |
+|  genmmcmds/clkgen/CLK_OUT | sutx/fifo_01/RE01                               | genmmcmds/rstgen/cnt_reg[0]_0          |                2 |             11 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/retptr_rep[0]_i_1_n_0                   | genmmcmds/rstgen/tagreg_reg[1]         |                4 |             12 |
+|  genmmcmds/clkgen/CLK_OUT | loader/recv/cnt[0]_i_1__0_n_0                   | genmmcmds/rstgen/cnt_reg[0]_0          |                4 |             13 |
+|  genmmcmds/clkgen/CLK_OUT | sutx/send/cmd[8]_i_1_n_0                        | genmmcmds/rstgen/cnt_reg[0]_0          |                3 |             14 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/we0                                  | genmmcmds/rstgen/tagreg_reg[1]         |               11 |             15 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/ent0/we01_out                   | genmmcmds/rstgen/tagreg_reg[1]         |               10 |             15 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/E[0]                                    | genmmcmds/rstgen/cnt_reg[0]_0          |                3 |             18 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/rrfptr_reg[5]                        | genmmcmds/rstgen/tagreg_reg[1]         |               12 |             27 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/commit26                             | genmmcmds/rstgen/tagreg_reg[1]         |               14 |             28 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | genmmcmds/rstgen/specbit_reg[0]        |               31 |             32 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | genmmcmds/rstgen/cnt_reg[0]_0          |               13 |             33 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/pc_reg[3]_rep__0[0]             | genmmcmds/rstgen/tagreg_reg[1]         |               15 |             34 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | genmmcmds/rstgen/SR[0]                 |               27 |             35 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[17][4]_i_1_n_0                  |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[18][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[19][4]_i_1_n_0                  |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[1][4]_i_1_n_0                   |                                        |                7 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[20][4]_i_1_n_0                  |                                        |                6 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[21][4]_i_1_n_0                  |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[22][4]_i_1_n_0                  |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[23][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[24][4]_i_1_n_0                  |                                        |               12 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[25][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[26][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[27][4]_i_1_n_0                  |                                        |               14 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[28][4]_i_1_n_0                  |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[29][4]_i_1_n_0                  |                                        |               12 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[30][4]_i_1_n_0                  |                                        |               14 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[31][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[3][4]_i_1_n_0                   |                                        |                9 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[4][4]_i_1_n_0                   |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[5][4]_i_1_n_0                   |                                        |               12 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[6][4]_i_1_n_0                   |                                        |               12 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[7][4]_i_1_n_0                   |                                        |               13 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[8][4]_i_1_n_0                   |                                        |               15 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[9][4]_i_1_n_0                   |                                        |                9 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[2][4]_i_1_n_0                   |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/ent0/res_uu__2                  | genmmcmds/rstgen/tagreg_reg[1]         |               19 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/addr                                    |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[10][4]_i_1_n_0                  |                                        |               11 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[11][4]_i_1_n_0                  |                                        |               13 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[12][4]_i_1_n_0                  |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[13][4]_i_1_n_0                  |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[14][4]_i_1_n_0                  |                                        |               10 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[15][4]_i_1_n_0                  |                                        |                8 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/sb/spectag[16][4]_i_1_n_0                  |                                        |               12 |             37 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/kirin/p_1_in                               |                                        |               11 |             44 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_ldst/spectag_reg[0][0]                  | genmmcmds/rstgen/tagreg_reg[1]         |               15 |             44 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_ldst/spectag_reg[0]_0[0]                | genmmcmds/rstgen/tagreg_reg[1]         |               15 |             44 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_ldst/spectag_reg[0]_1[0]                | genmmcmds/rstgen/tagreg_reg[1]         |               14 |             44 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_ldst/E[0]                               | genmmcmds/rstgen/tagreg_reg[1]         |               16 |             44 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | pipe/sb/dstval_latch0                  |               28 |             66 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we015_out_6                    | genmmcmds/rstgen/tagreg_reg[1]         |               32 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we09_out                       | genmmcmds/rstgen/tagreg_reg[1]         |               28 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we012_out                      | genmmcmds/rstgen/tagreg_reg[1]         |               30 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we09_out_4                     | genmmcmds/rstgen/tagreg_reg[1]         |               34 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we00_out                       | genmmcmds/rstgen/tagreg_reg[1]         |               29 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we06_out                       | genmmcmds/rstgen/tagreg_reg[1]         |               29 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we018_out                      | genmmcmds/rstgen/tagreg_reg[1]         |               34 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we06_out_3                     | genmmcmds/rstgen/tagreg_reg[1]         |               31 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we0                            | genmmcmds/rstgen/tagreg_reg[1]         |               32 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we00_out_1                     | genmmcmds/rstgen/tagreg_reg[1]         |               34 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we012_out_5                    | genmmcmds/rstgen/tagreg_reg[1]         |               33 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we03_out_2                     | genmmcmds/rstgen/tagreg_reg[1]         |               33 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we018_out_7                    | genmmcmds/rstgen/tagreg_reg[1]         |               32 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/we0_0                          | genmmcmds/rstgen/tagreg_reg[1]         |               33 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we015_out                      | genmmcmds/rstgen/tagreg_reg[1]         |               29 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/we03_out                       | genmmcmds/rstgen/tagreg_reg[1]         |               32 |             84 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/seiryu/lddatasb_latch_reg[31]_0            |                                        |               12 |             96 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_branch/we00_out                         | genmmcmds/rstgen/tagreg_reg[1]         |               38 |            107 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_branch/we03_out                         | genmmcmds/rstgen/tagreg_reg[1]         |               40 |            107 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_branch/we06_out                         | genmmcmds/rstgen/tagreg_reg[1]         |               34 |            107 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/ai_branch/we0                              | genmmcmds/rstgen/tagreg_reg[1]         |               41 |            107 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_ldst/ent3/buf_rrftag_ldst_reg[0][0] | genmmcmds/rstgen/tagreg_reg[1]         |               81 |            109 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/npc_if_reg[0][0]                | pipe/kirin/prcond_if0                  |               39 |            132 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu2/ent5/busy_reg                  | genmmcmds/rstgen/tagreg_reg[1]         |               96 |            155 |
+|  genmmcmds/clkgen/CLK_OUT | loader/recv/waddr0                              | genmmcmds/rstgen/cnt_reg[0]_0          |               29 |            171 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_alu1/ent5/busy_reg                  | genmmcmds/rstgen/tagreg_reg[1]         |              116 |            179 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_branch/ent3/busy_reg                | genmmcmds/rstgen/tagreg_reg[1]         |              103 |            185 |
+|  genmmcmds/clkgen/CLK_OUT | pipe/reserv_mul/enable1                         | pipe/reserv_mul/imm_type_1_id0         |               80 |            261 |
+| ~genmmcmds/clkgen/CLK_OUT |                                                 | genmmcmds/rstgen/tagreg_reg[1]         |              126 |            512 |
+|  genmmcmds/clkgen/CLK_OUT | genmmcmds/rstgen/E[0]                           |                                        |              985 |           2048 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 | genmmcmds/rstgen/tagreg_reg[1]         |             1790 |           2224 |
+|  genmmcmds/clkgen/CLK_OUT |                                                 |                                        |             1342 |           3660 |
++---------------------------+-------------------------------------------------+----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     2 |
+| 5      |                     2 |
+| 6      |                   192 |
+| 7      |                     1 |
+| 8      |                     4 |
+| 10     |                     6 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 14     |                     1 |
+| 15     |                     2 |
+| 16+    |                    78 |
++--------+-----------------------+
+
+

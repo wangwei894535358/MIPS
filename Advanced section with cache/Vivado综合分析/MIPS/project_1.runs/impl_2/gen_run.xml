@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1514883261">
+  <File Type="PWROPT-DRC" Name="multiMips_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="multiMips_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="multiMips_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="multiMips_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="multiMips.tcl"/>
+  <File Type="OPT-HWDEF" Name="multiMips.hwdef"/>
+  <File Type="RDI-RDI" Name="multiMips.vdi"/>
+  <File Type="OPT-DCP" Name="multiMips_opt.dcp"/>
+  <File Type="OPT-DRC" Name="multiMips_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="multiMips_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="multiMips_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="multiMips_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="multiMips_placed.dcp"/>
+  <File Type="PLACE-IO" Name="multiMips_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="multiMips_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="multiMips_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="multiMips_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="multiMips_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="multiMips_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="multiMips_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="multiMips_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="multiMips_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="multiMips_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="multiMips_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="multiMips_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="multiMips_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="multiMips_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="multiMips_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="multiMips_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="multiMips_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="multiMips_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="multiMips.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="multiMips_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="multiMips.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="multiMips_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="multiMips.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="multiMips_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="multiMips.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="multiMips_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="multiMips_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="multiMips_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="multiMips_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="multiMips_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="multiMips_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="multiMips_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="multiMips_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="multiMips_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="multiMips_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="multiMips_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="multiMips_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="multiMips_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="multiMips_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="multiMips_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="multiMips.bit"/>
+  <File Type="BITSTR-RBT" Name="multiMips.rbt"/>
+  <File Type="BITSTR-NKY" Name="multiMips.nky"/>
+  <File Type="BITSTR-BMM" Name="multiMips_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="multiMips.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="multiMips.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/signext.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/regFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/memory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/instructionMem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/AluCtr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/Alu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pipeline_withoutcache_new/multiMips.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="multiMips"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/mips.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/mips.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

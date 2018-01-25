@@ -1,0 +1,94 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto c629a364bfa94b34bd0457b0fb39c3d8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/retarget/IBUFGDS.v" Line 31. Module IBUFGDS has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/IBUFDS.v" Line 33. Module IBUFDS(CAPACITANCE="DONT_CARE",DIFF_TERM="FALSE",IBUF_DELAY_VALUE="0",IBUF_LOW_PWR="TRUE",IOSTANDARD="DEFAULT") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/MMCME2_ADV.v" Line 123. Module MMCME2_ADV(CLKFBOUT_MULT_F=8.0,CLKIN1_PERIOD=5.0,CLKOUT0_DIVIDE_F=16.0,CLKOUT1_DIVIDE=4,DIVCLK_DIVIDE=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/Projects/computer_structure/ridecore/fpga/fpga.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/retarget/IBUFGDS.v" Line 31. Module IBUFGDS has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/IBUFDS.v" Line 33. Module IBUFDS(CAPACITANCE="DONT_CARE",DIFF_TERM="FALSE",IBUF_DELAY_VALUE="0",IBUF_LOW_PWR="TRUE",IOSTANDARD="DEFAULT") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2017_01_23_1756540/data/verilog/src/unisims/MMCME2_ADV.v" Line 123. Module MMCME2_ADV(CLKFBOUT_MULT_F=8.0,CLKIN1_PERIOD=5.0,CLKOUT0_DIVIDE_F=16.0,CLKOUT1_DIVIDE=4,DIVCLK_DIVIDE=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/Projects/computer_structure/ridecore/fpga/fpga.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS(CAPACITANCE="DONT_CARE",D...
+Compiling module unisims_ver.IBUFGDS
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.CLKGEN_MMCM
+Compiling module xil_defaultlib.RSTGEN
+Compiling module xil_defaultlib.GEN_MMCM_DS
+Compiling module xil_defaultlib.select_logic
+Compiling module xil_defaultlib.ram_sync_1r1w(BRAM_ADDR_WIDTH=9,...
+Compiling module xil_defaultlib.btb
+Compiling module xil_defaultlib.sel_bhrfix
+Compiling module xil_defaultlib.true_dualport_ram
+Compiling module xil_defaultlib.pht
+Compiling module xil_defaultlib.gshare_predictor
+Compiling module xil_defaultlib.pipeline_if
+Compiling module xil_defaultlib.tag_generator
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.sourceoperand_manager
+Compiling module xil_defaultlib.rrf_freelistmanager
+Compiling module xil_defaultlib.ram_sync_nolatch_4r2w(BRAM_ADDR_...
+Compiling module xil_defaultlib.renaming_table
+Compiling module xil_defaultlib.arf
+Compiling module xil_defaultlib.rrf
+Compiling module xil_defaultlib.src_manager
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.brimm_gen
+Compiling module xil_defaultlib.rs_requestgenerator
+Compiling module xil_defaultlib.prioenc(REQ_LEN=16,GRANT_LEN=4)
+Compiling module xil_defaultlib.maskunit(REQ_LEN=16,GRANT_LEN=4)
+Compiling module xil_defaultlib.allocateunit(REQ_LEN=16,GRANT_LE...
+Compiling module xil_defaultlib.oldest_finder2(ENTLEN=3,VALLEN=8...
+Compiling module xil_defaultlib.oldest_finder4(ENTLEN=3,VALLEN=8...
+Compiling module xil_defaultlib.oldest_finder8
+Compiling module xil_defaultlib.rs_alu_ent
+Compiling module xil_defaultlib.rs_alu
+Compiling module xil_defaultlib.search_begin(ENTSEL=2,ENTNUM=4)
+Compiling module xil_defaultlib.search_end(ENTSEL=2,ENTNUM=4)
+Compiling module xil_defaultlib.alloc_issue_ino
+Compiling module xil_defaultlib.rs_ldst_ent
+Compiling module xil_defaultlib.rs_ldst
+Compiling module xil_defaultlib.rs_branch_ent
+Compiling module xil_defaultlib.rs_branch
+Compiling module xil_defaultlib.prioenc(REQ_LEN=2,GRANT_LEN=1)
+Compiling module xil_defaultlib.maskunit(REQ_LEN=2,GRANT_LEN=1)
+Compiling module xil_defaultlib.allocateunit(REQ_LEN=2,GRANT_LEN...
+Compiling module xil_defaultlib.rs_mul_ent
+Compiling module xil_defaultlib.rs_mul
+Compiling module xil_defaultlib.src_a_mux
+Compiling module xil_defaultlib.src_b_mux
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.exunit_alu
+Compiling module xil_defaultlib.search_begin(ENTSEL=5,ENTNUM=32)
+Compiling module xil_defaultlib.search_end(ENTSEL=5,ENTNUM=32)
+Compiling module xil_defaultlib.storebuf
+Compiling module xil_defaultlib.exunit_ldst
+Compiling module xil_defaultlib.mux_4x1
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.exunit_mul
+Compiling module xil_defaultlib.exunit_branch
+Compiling module xil_defaultlib.tag_decoder
+Compiling module xil_defaultlib.miss_prediction_fix_table
+Compiling module xil_defaultlib.reorderbuf
+Compiling module xil_defaultlib.pipeline
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.imem_ld
+Compiling module xil_defaultlib.TX_FIFO
+Compiling module xil_defaultlib.UartTx
+Compiling module xil_defaultlib.SingleUartTx
+Compiling module xil_defaultlib.UartRx
+Compiling module xil_defaultlib.PLOADER
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav

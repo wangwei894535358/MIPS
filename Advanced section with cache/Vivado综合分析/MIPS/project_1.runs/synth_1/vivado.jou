@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 01 23:50:39 2018
+# Process ID: 2496
+# Current directory: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log multiMips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiMips.tcl
+# Log file: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1/multiMips.vds
+# Journal file: C:/Users/luzhe/Desktop/camera_zybo_01_01/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multiMips.tcl -notrace
