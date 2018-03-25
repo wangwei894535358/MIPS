@@ -4,16 +4,20 @@ This is the curriculum design for the Computer Processor and System (MR329 in SJ
 ## Introduction
 ### Single period
 The next picture just illustrates the whole architecture of the single period MIPS, with six basic unit of function: Control, AluCtr, ALU, regFile, Memory, and Sign Extend.
-![single](/pic/single.png "singlestage")
+
+<img src="./pic/single.png" width = "500" alt="图片名称">
+
 ### Piple Design
 The piple design differs with the single period by adding four stages of registers which divides the job in single period into five similiar part, including Instruction Fetch (IF), Instrution Decode (ID), Excution (EX), Memory (M), Write Back (WB). The main trick is how to deal with the data and control hazard.
-![pipeline](/pic/pipeline.png "pipeline")
+
+<img src="./pic/pipeline.png" width = "500" alt="图片名称">
+
 ### Cache design
 The Cache  is realized by adding registers before the Memory and set different time access time. The control logic is constructed with a FSM as is shown in the next figure.
 
 <img src="./pic/singleCache.png" width = "300" height = "200" alt="图片名称">
 <img src="./pic/pipelineCache.png" width = "300" height = "200" alt="图片名称">
-<img src="./pic/cacheState1.png" width = "300" height = "200" alt="图片名称">
+<img src="./pic/cacheState1.png" width = "300" alt="图片名称">
 <!-- 
 ![singleCache](/pic/singleCache.png "singleCache")
 
