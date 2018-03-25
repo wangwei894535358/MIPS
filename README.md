@@ -15,9 +15,9 @@ The piple design differs with the single period by adding four stages of registe
 ### Cache design
 The Cache  is realized by adding registers before the Memory and set different time access time. The control logic is constructed with a FSM as is shown in the next figure.
 
-<img src="./pic/singleCache.png" width = "300" height = "200" alt="图片名称">
-<img src="./pic/pipelineCache.png" width = "300" height = "200" alt="图片名称">
-<img src="./pic/cacheState1.png" width = "300" alt="图片名称">
+<img src="./pic/singleCache.png" width = "500"  alt="图片名称">
+<img src="./pic/pipelineCache.png" width = "500"  alt="图片名称">
+<img src="./pic/cacheState1.png" width = "500" alt="图片名称">
 <!-- 
 ![singleCache](/pic/singleCache.png "singleCache")
 
